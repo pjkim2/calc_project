@@ -1,3 +1,4 @@
+package lib.src;
 public class test {
     
     public static void arithmeticTest(){
