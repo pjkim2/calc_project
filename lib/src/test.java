@@ -1,4 +1,9 @@
 package lib.src;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class test {
     
     public static void arithmeticTest(){
@@ -19,8 +24,19 @@ public class test {
         System.out.println("Division result: " + result4);
     }
     
-    public static void main(String[] args){
-        arithmeticTest();
+    public static void main(String[] args) throws IOException{
+        //arithmeticTest();
+
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+
+        String s = r.readLine();
+        System.out.println("Buffered reader input: " + s);
+
+        String[] w = s.split(" ");
+        for (int i = 0; i < w.length; i++){
+            System.out.println(w[i]);
+        }
+
     }
 
 }

@@ -1,11 +1,11 @@
 package lib.src;
 public class test_methods {
     
-    public static int test_method1(int a, int b){
+    public String read(String[] input){
         
         
         
-        return 0;
+        return null;
     }
 
 }
