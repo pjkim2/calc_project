@@ -37,6 +37,9 @@ public class test {
             System.out.println(w[i]);
         }
 
+        test_methods.read(w);
+        
+
     }
 
 }
