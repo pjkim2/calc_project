@@ -1,10 +1,41 @@
 package lib.src;
 
 public class test_methods {
+
+    public static void stack_read(String[] input){
+
+        //assume simple expression of any length: a + b * c / d
+        //attempt to implement pemdas priority (currently only multiplication and division)
+
+        boolean check = false;
+        for (int i = 0; i < input.length; i++){
+            char c = input[i].charAt(0);
+            int symbol = c;
+            if (symbol == 42 || symbol == 47){
+                check = true;
+            }
+        }
+        while (check = true){
+            
+        }
+
+    }
+
+    public static boolean check_md(String[] input){
+        boolean check = false;
+        for (int i = 0; i < input.length; i++){
+            char c = input[i].charAt(0);
+            int symbol = c;
+            if (symbol == 42 || symbol == 47){
+                check = true;
+            }
+        }
+        return check;
+    }
     
-    public static String read(String[] input){
+    public static void simple_read(String[] input){
         
-        // for now assume simple 3 part expressions a + b / c - d / e * f / g div h
+        //assume simple 3 part expressions a + b / c - d / e * f / g div h
 
         int a = Integer.parseInt(input[0]);
         int b = Integer.parseInt(input[2]);
@@ -34,7 +65,6 @@ public class test_methods {
 
         System.out.println("Result: " + result);
 
-        return null;
     }
 
 }
